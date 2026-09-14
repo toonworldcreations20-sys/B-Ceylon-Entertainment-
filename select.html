@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Select Tickets — B-Ceylon ENTERTAINMENT Vol. 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav"><div class="container navin">
+<a class="logo" href="index.html"><img src="photos/logo-cube.jpg" alt="B-Ceylon"><span>B-CEYLON ENTERTAINMENT<b>.</b></span></a>
+<div class="links"><a href="index.html">Discover</a><a href="event.html">Event</a><a href="reservations.html">Reservations</a></div>
+<button class="hamb" aria-label="Open menu">☰</button>
+</div></nav>
+<main class="section"><div class="container form-wrap">
+<h2>SELECT YOUR ACCESS</h2>
+<p class="lead">Phase One is the people's pick — Rs. 1,500 back at the bar 🍾 VIP decks for crews that roll deep.</p>
+<form id="selectForm" class="form card">
+<div class="form-grid">
+<div class="field"><label for="tier">Ticket category</label><select id="tier"></select></div>
+<div class="field"><label for="qty">Quantity (max 10 online)</label><input id="qty" type="number" min="1" max="10" value="1" inputmode="numeric"></div>
+<div class="field"><label for="name">Attendee name</label><input id="name" required autocomplete="name"></div>
+<div class="field"><label for="phone">Phone</label><input id="phone" autocomplete="tel" placeholder="07X XXX XXXX"></div>
+<div class="field full"><label for="email">Email (for your records)</label><input id="email" type="email" autocomplete="email"></div>
+</div>
+<div class="summary"><span>Ticket price</span><b id="unit">—</b></div>
+<div class="summary"><span>Subtotal</span><b id="sub">—</b></div>
+<div class="summary"><span>Service fee</span><b id="fee">—</b></div>
+<div class="summary"><span>Total</span><b id="grand" class="total">—</b></div>
+<button class="btn primary" type="submit">Continue to checkout →</button>
+</form>
+</div></main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checkout — B-Ceylon ENTERTAINMENT Vol. 2</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav"><div class="container navin">
+<a class="logo" href="index.html"><img src="photos/logo-cube.jpg" alt="B-Ceylon"><span>B-CEYLON ENTERTAINMENT<b>.</b></span></a>
+<div class="links"><a href="index.html">Discover</a><a href="event.html">Event</a><a href="reservations.html">Reservations</a></div>
+<button class="hamb" aria-label="Open menu">☰</button>
+</div></nav>
+<main class="section"><div class="container form-wrap">
+<h2>CHECKOUT</h2>
+<p class="lead">Final review. Nothing is confirmed until you submit this step.</p>
+<div id="checkout"><form id="checkoutForm" class="form card">
+<div class="notice">Booking for <b>B-Ceylon ENTERTAINMENT Vol. 2</b> • 31 December 2026 • 7:00 PM • 21+ adults only</div>
+<div class="summary"><span>Customer</span><b id="co-name">—</b></div>
+<div class="summary"><span>Access</span><b id="co-tier">—</b></div>
+<div class="summary"><span>Quantity</span><b id="co-qty">—</b></div>
+<div class="summary"><span>Tickets</span><b id="co-sub">—</b></div>
+<div class="summary"><span>Service fee</span><b id="co-fee">—</b></div>
+<div class="summary"><span>Total</span><b id="co-total" class="total">—</b></div>
+<div class="field"><label for="pay">Payment status</label><select id="pay"><option>Pay at venue</option><option>Payment pending</option></select></div>
+<label><input id="agree" type="checkbox"> I confirm my details, I am 21 or older, and I understand that cancellation/support is handled using my reservation number.</label>
+<div id="co-error" class="error"></div>
+<button class="btn primary" type="submit">Confirm reservation</button>
+</form></div>
+</div></main>
+<script src="app.js"></script>
+</body>
+</html>
